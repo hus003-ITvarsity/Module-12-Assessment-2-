@@ -1,0 +1,138 @@
+html{
+    font-size: 14px;
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.front-page{
+    background-color: lavender;
+
+}
+
+.blog-header{
+    margin-top: 9rem;
+    max-width: 700px;
+}
+
+@media (max-width: 768px){
+    .blog-header{
+        margin-top: 10rem;
+    }
+}
+
+.container{
+    max-width: 960px;
+}
+
+.team{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+}
+
+.card-deck .card{
+    min-width: 220px;
+}
+
+.card-text{
+    padding-top: 1rem;
+}
+
+.card-block{
+    min-height: 220px;
+}
+
+#getLatest{
+    text-decoration: none !important;
+}
+
+#getAll{
+    text-decoration: none !important;
+}
+
+#getPopular{
+    text-decoration: none !important;
+}
+
+.active{
+    border-bottom: 1px solid black;
+
+}
+
+.blog-header h1 {
+    background: linear-gradient(to right, white, rebeccapurple, ghostwhite);
+    color: white;
+}
+
+.blog-header p.lead {
+    color: #6e4398; 
+}
+
+.gradient-line {
+    position: fixed; 
+    z-index: 1000;
+}
+
+.gradient-line.bottom *inactive*{
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(to right, #330f7c, #feb47b, #330f7c);
+}
+
+.gradient-line.left {
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #330f7c, orange);
+}
+
+.gradient-line.right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #330f7c, orange);
+}
+
+
+/********* start up page *********/
+
+#splash-logo {
+    width: 333px; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+#loading{
+    font-size: 1.5rem;
+    position: absolute;
+    top: calc(50% + 100px);
+    left: 50%; 
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+/*********** buttons ***********/
+
+.btn-lg {
+    color: white; 
+    background: linear-gradient(to bottom, mediumpurple, #f0bb58);
+} 
+
+.btn-lg :hover { 
+    color: rebeccapurple;
+}
+
+.btn-lg i {
+    transition: rebeccapurple 1s;
+}

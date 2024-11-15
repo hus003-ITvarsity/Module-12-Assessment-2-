@@ -1,0 +1,210 @@
+body.front-page {
+    background-image: url('images/frontpage.png');  
+    background-size: cover;  
+    background-position: center center;  
+    background-attachment: fixed;  
+    justify-content: center;
+    align-items: center;
+
+}
+body.background {
+    background-image: url('images/bg2.png');  
+    background-size: cover;  
+    background-position: center center;  
+    background-attachment: fixed;  
+    font-family: cursive;
+
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.62); 
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Contacts table */
+
+tr:hover {
+    background-color: #a9818b;
+    cursor: pointer;
+}
+
+#table-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+
+#table td {
+    padding: 10px;
+}
+
+#button-container {
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+    margin-top: 70px; 
+}
+
+p{
+    color: #a9818b;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+
+h5 {
+    font-weight: 500;
+    color: #812158;
+}
+
+/* Button Styling */
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#refresh, #addContact{
+    background-color: silver;
+
+}
+
+#refresh:hover, #addContact:hover  {
+    background-color: #a9818b;
+}
+
+#editContact, #deleteContact {
+    background-color: #a9818b;
+    color: white;
+}
+
+#editContact:hover, #deleteContact:hover {
+    background-color: #941d62;
+}
+
+#homeLink {
+    background-color: silver;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#homeLink:hover {
+    background-color: #4d1234;
+}
+
+#submitForm {
+    background-color: #a9818b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#submitForm:hover {
+    background-color: #4d1234;
+}
+
+/* Form Styling */
+
+label {
+    font-weight: 500;
+    margin-bottom: 9px;
+    color: #812158;
+}
+
+input {
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: 1.5px solid #4d1234;
+    font-size: 15px;
+    color: #812158;
+}
+
+input:focus {
+    border-color: #0064ff;
+    outline: none;
+}
+
+#avatarImage {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Api Styling */
+
+body.api-style {
+    background-color: #a9818b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.message {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.api-form {
+    background: silver;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#apiKey {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #a9818b;
+}
+
+#submitApiKey {
+    background-color: #a9818b;
+    color: #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitApiKey:hover {
+    background-color: #4d1234;
+}
+
+
+/* Mobile responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    #addContact, #refresh, #editContact, #deleteContact, #submitForm {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+
